@@ -223,3 +223,26 @@ Projeto desenvolvido para fins acadêmicos na disciplina de Integração e Entre
 
 Status: Em desenvolvimento.
 
+
+
+## Rodando os testes
+
+Instale as dependências de desenvolvimento:
+
+```
+pip install -r requirements-dev.txt
+```
+
+Execute os testes:
+
+```
+pytest
+```
+
+Execute os testes com cobertura (meta mínima de 85%):
+
+```
+pytest --cov=hello --cov-report=term-missing --cov-fail-under=85
+```
+
+O relatório de cobertura gera os arquivos `.coverage` e `htmlcov/`, que já estão no `.gitignore`.
